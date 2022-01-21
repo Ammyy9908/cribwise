@@ -1,0 +1,98 @@
+.login{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "form image";
+    overflow: hidden;
+}
+
+.login-form{
+    grid-area:form;
+    background-color: #fff;
+    position: relative;
+}
+
+.login-box{
+    width: max-content;
+    margin: 30% auto;
+}
+.login-box h3{
+    font-size: 31px;
+    margin-bottom: 0;
+}
+.login-box p{
+    margin-top: 5px;
+    color: rgb(133, 133, 133);
+    font-size: 18px;
+}
+.form-box{
+    display: flex;
+    flex-direction: column;
+    gap:18px;
+    align-items: flex-start;
+}
+.form-field{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.form-field label{
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.form-field input{
+    width: 100%;
+    height: 28px;
+    border: 2px solid #698d9e;
+    outline: none;
+    border-radius: 3px;
+}
+.form-box button{
+    width: 100%;
+    height: 32px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-box a{
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.login-section-image{
+    display: none;
+    grid-area: image;
+   background-color: rgb(39, 39, 39);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url('https://images.unsplash.com/photo-1635002962487-2c1d4d2f63c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80');
+}
+
+
+@media screen and (min-width:968px){
+.login{
+    grid-template-columns: 2fr 2fr;
+}
+.login-section-image{
+    display: block;
+}
+.login-box{
+    margin: 50% auto;
+}
+
+}
